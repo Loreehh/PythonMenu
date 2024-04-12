@@ -1,10 +1,10 @@
 import webbrowser
+from art import *
 
 
+tprint("Menu APP")
 
 
-
-print("Menu App")
 choose = input()
 
 if choose == "close" :
@@ -18,11 +18,4 @@ if choose == "credentials" :
 
 if choose == "youtube":
     webbrowser.open('http://youtube.com')
-
-
-
-
-
-
-
 
