@@ -18,6 +18,7 @@ else:
 
 
 print("\033[92mWhat do you want to do?\033[0m")
+
 choose = input()
 
 if choose == "close":
