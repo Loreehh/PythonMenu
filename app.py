@@ -24,13 +24,16 @@ print("""
 [2] Credentials
 [3] Youtube
 
-""")
+""") # Here you can add more options
 
 
 choose = input("\x1b[38;2;0;255;58m>>> \x1b[0;0;0;0;00m")
 
+# Here you can add or modify the options
+
 if choose == "close" :
     print("Program closed.")
+    
 
 f = open('test.txt','r')
 if choose == "credentials" :
@@ -43,4 +46,6 @@ if choose == "credentials" :
 
 if choose == "youtube":
     webbrowser.open('http://youtube.com')
+    print(" ")
+    input("\x1b[38;2;0;255;58mPress the enter key for exit! :D\x1b[0;0;0;0;00m")
 

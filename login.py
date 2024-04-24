@@ -21,6 +21,8 @@ else:
 
 print("\033[92mWhat do you want to do?\033[0m")
 
+# Here you can add more options
+
 print("""
 \x1b[38;2;0;255;58m[1] Close
 [2] Menu
@@ -28,6 +30,7 @@ print("""
 
 choose = input("\x1b[38;2;0;255;58m>>> \x1b[0;0;0;0;00m")
 
+# Here you can add or modify the options
 if choose == "close":
 	print("\033[93mClosing Menu\033[0m")
 
