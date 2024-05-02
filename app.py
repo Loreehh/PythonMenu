@@ -1,7 +1,7 @@
 import webbrowser
 import os
-from time import sleep
 import sys
+from time import sleep
 
 def typewriter_effect(text):
     for char in text:
@@ -9,6 +9,8 @@ def typewriter_effect(text):
         sys.stdout.flush()
         sleep(0.15)  
     print()
+
+
 
 print("""
  █████  ██████  ██████      ███    ███ ███████ ███    ██ ██    ██ 
@@ -27,9 +29,9 @@ print("""
 print("\x1b[0;0;0;0;00mWhat do you want to do?")
 
 print("""
-\x1b[38;2;0;255;58m[1] GitHub                           [4] Upcase
+\x1b[38;2;0;255;58m[1] GitHub                           [4] Upcase                          [7] Start VSCODE
 [2] Credentials                      [5] Capitalize                      [8] Open CMD
-[3] Youtube                          [6] Lower                           [9] 
+[3] Youtube                          [6] Lower                           [9] Exit
 
 """) # Here you can add more options
 
@@ -39,7 +41,8 @@ choose = input("\x1b[38;2;0;255;58m>>> \x1b[0;0;0;0;00m")
 # Here you can add or modify the options
 
 if choose == "1" :
-    print("Opening my Github Profile.")
+    line_1= "Opening my Github Profile"
+    typewriter_effect(line_1)
     webbrowser.open('https://github.com/Loreehh')
     
 
@@ -72,8 +75,18 @@ if  choose == "6":
     choose = input("\x1b[38;2;0;255;58m>>> \x1b[0;0;0;0;00m")
     print(choose.lower())
 
+if choose == "7":
+    line_1 = "Opening Visual Studio Code ....."
+    typewriter_effect(line_1)
+    os.system("code .")
+    
 if choose == "8":
     line_1 = "Opening Command Prompt ....."
     typewriter_effect(line_1)
     os.system("start cmd")
 
+if choose == "9":
+    print("Bye World!")
+
+
+# https://github.com/Loreehh/PythonMenu
